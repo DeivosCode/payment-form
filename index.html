@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="payment">
+        <div class="form">
+            <div class="card master-card space">
+                <label class="label">Card Number</label>
+                <input type="text" class="input" name="card_number" placeholder="3596 **** **** ****"
+                    data-mask="0000 **** **** ****" required>
+                <img class="master-card__icon" src="img/mastercard.svg" alt="">
+            </div>
+            <div class="card-grp space">
+                <div class="card-item">
+                    <label class="label">MM YY</label>
+                    <input type="text" class="input" name="mm_yy" placeholder="00  00" data-mask="00  00">
+                </div>
+                <div class="card-item">
+                    <label class="label">CVS Code</label>
+                    <input type="text" class="input" name="cvc" placeholder="0 0 0" data-mask="0 0 0" required>
+                </div>
+            </div>
+            <label class="label">Name</label>
+            <div class="btn-crd card space">
+                <input type="text" class="input name-input" name="name" placeholder="Your Name">
+                <a href="#" class="btn">
+                    Pay Now
+                </a>
+            </div>
+        </div>
+        <div class="cost-and-item">
+            <img class="cost-and-item__img" src="img/laptop.png" alt="">
+            <div class="cost">
+                <p class="cost__header">Total</p>
+                <h3 class="cost__price"><span class="cost__price--size-s">$</span> 1.099<span
+                        class="cost__price--size-s">,00</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- <input type="text" id="txt_cardNumber" name="txt_cardNumber" onkeypress="return inputText(number)"> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="plugins/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+
+    <script>
+        queryString = inputText.replace(/[*]/g, "");
+    </script>
+</body>
+
+</html>
