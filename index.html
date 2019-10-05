@@ -24,7 +24,7 @@
             <div class="card-grp space">
                 <div class="card-item">
                     <label class="label">MM YY</label>
-                    <input type="text" class="input" name="mm_yy" placeholder="00  00" data-mask="00  00">
+                    <input type="text" class="input" name="mm_yy" placeholder="00  00" data-mask="00  00" required>
                 </div>
                 <div class="card-item">
                     <label class="label">CVS Code</label>
@@ -33,7 +33,7 @@
             </div>
             <label class="label">Name</label>
             <div class="btn-crd card space">
-                <input type="text" class="input name-input" name="name" placeholder="Your Name">
+                <input type="text" class="input name-input" name="name" placeholder="Your Name" required>
                 <a href="#" class="btn">
                     Pay Now
                 </a>
@@ -43,22 +43,18 @@
             <img class="cost-and-item__img" src="img/laptop.png" alt="">
             <div class="cost">
                 <p class="cost__header">Total</p>
-                <h3 class="cost__price"><span class="cost__price--size-s">$</span> 1.099<span
-                        class="cost__price--size-s">,00</span></h3>
+                <h3 class="cost__price">
+                    <span class="cost__price--size-s">$</span> 1.099
+                    <span class="cost__price--size-s">,00</span>
+                </h3>
             </div>
         </div>
     </div>
-
-    <!-- <input type="text" id="txt_cardNumber" name="txt_cardNumber" onkeypress="return inputText(number)"> -->
 
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="plugins/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
-
-    <script>
-        queryString = inputText.replace(/[*]/g, "");
-    </script>
 </body>
 
 </html>
